@@ -37,7 +37,6 @@ if save:
     # cek prediksi
 
     with st.spinner("Tunggu Sebentar Masih Proses..."):
-        st.write(prediksi)
         st.write("Golongan ",prediksi[-1])  
         if prediksi[-1]==0:
             st.subheader("Hp anda termasuk hp dengan harga murah")
