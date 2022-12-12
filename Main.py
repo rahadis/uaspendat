@@ -1,9 +1,9 @@
 import streamlit as st
 import Dataset
 
-#st.set_page_config(
-  #      page_title="Prediksi Harga HP",
-#)
+st.set_page_config(
+  page_title="Prediksi Harga HP",
+)
 
 st.subheader("Prediksi Harga HP")
 
