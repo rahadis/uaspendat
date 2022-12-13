@@ -28,9 +28,6 @@ three_g = st.number_input("Memiliki 3G atau tidak (0=TIDAK,1=YA)",min_value=0,ma
 touch_screen = st.number_input("Touch screen atau tidak (0=TIDAK,1=YA)",min_value=0,max_value=1)
 wifi = st.number_input("Memiliki Wifi atau tidak (0=TIDAK,1=YA)",min_value=0,max_value=1)
 
-model = st.selectbox(
-    "Pilih model",
-    ('Decision Tree'))
 
 columns = st.columns((2, 0.6, 2))
 save = columns[1].button("Submit")
@@ -49,7 +46,7 @@ def execute(prediksi):
             st.subheader("Hp anda termasuk hp dengan harga sangat mahal")
 
 
-if save and model=='Decision Tree':
+if save:
     data = Dataset.pisahnormalisasi([battery_power, clock_speed, fc, int_memory, m_dep, mobile_wt, n_cores, pc, px_height, px_width, ram, sc_h, sc_w, talk_time, blue, dual_sim, four_g, three_g, touch_screen, wifi])
     prediksi = Dataset.DT(data)
     execute(prediksi)
