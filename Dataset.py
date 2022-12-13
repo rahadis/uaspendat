@@ -16,6 +16,7 @@ df=pd.DataFrame(data)
 st.dataframe(df)
 
 st.subheader("Penjelasan")
+st.write("Untuk menentukan harga hp diperlukan data sebagai berikut:")
 st.write("battery_power = Kapasitas Baterai")
 st.write("blue = bluetooth ") 
 st.write("clock_speed = Kecepatan Processor") 
